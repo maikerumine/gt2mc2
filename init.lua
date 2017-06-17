@@ -1,6 +1,6 @@
 -- mods/gt2mc/init.lua
 
-
+dofile(minetest.get_modpath("gt2mc2").."/craftitems.lua")
 --default to mcl_core
 minetest.register_alias("default:stone", "mcl_core:stone")
 minetest.register_alias("default:savannastone", "mcl_core:stone")
@@ -159,29 +159,9 @@ minetest.register_alias("default:nyancat_rainbow", "mcl_core:nyancat_rainbow")
 --minetest.register_alias("default:apple", "mcl_core:apple")
 minetest.register_alias("default:apple", "mcl_farming:melon")  --did this to fix map
 
-minetest.register_alias("default:pick_wood", "mcl_tools:pick_wood")
-minetest.register_alias("default:pick_stone", "mcl_tools:pick_stone")
-minetest.register_alias("default:pick_iron", "mcl_tools:pick_iron")
-minetest.register_alias("default:pick_gold", "mcl_tools:pick_gold")
-minetest.register_alias("default:pick_diamond", "mcl_tools:pick_diamond")
-minetest.register_alias("default:shovel_wood", "mcl_tools:shovel_wood")
-minetest.register_alias("default:shovel_stone", "mcl_tools:shovel_stone")
-minetest.register_alias("default:shovel_iron", "mcl_tools:shovel_iron")
-minetest.register_alias("default:shovel_gold", "mcl_tools:shovel_gold")
-minetest.register_alias("default:shovel_diamond", "mcl_tools:shovel_diamond")
-minetest.register_alias("default:axe_wood", "mcl_tools:axe_wood")
-minetest.register_alias("default:axe_stone", "mcl_tools:axe_stone")
-minetest.register_alias("default:axe_iron", "mcl_tools:axe_iron")
-minetest.register_alias("default:axe_gold", "mcl_tools:axe_gold")
-minetest.register_alias("default:axe_diamond", "mcl_tools:axe_diamond")
-minetest.register_alias("default:sword_wood", "mcl_tools:sword_wood")
-minetest.register_alias("default:sword_stone", "mcl_tools:sword_stone")
-minetest.register_alias("default:sword_iron", "mcl_tools:sword_iron")
-minetest.register_alias("default:sword_gold", "mcl_tools:sword_gold")
-minetest.register_alias("default:sword_diamond", "mcl_tools:sword_diamond")
-minetest.register_alias("default:shears", "mcl_tools:shears")
 
-minetest.register_alias("default:Stick", "mcl_core:stick")
+
+
 minetest.register_alias("default:torch", "mcl_torches:torch")
 minetest.register_alias("torches:torch", "mcl_torches:torch")
 minetest.register_alias("default:torch_wall", "mcl_torches:torch_wall")
@@ -191,14 +171,10 @@ minetest.register_alias("torches:floor", "mcl_torches:torch")
 minetest.register_alias("default:torch_ceiling", "mcl_torches:torch")
 minetest.register_alias("torches:ceiling", "mcl_torches:torch")
 
-minetest.register_alias("default:paper", "mcl_core:paper")
-minetest.register_alias("default:book", "mcl_core:book")
+
 minetest.register_alias("default:furnace", "mcl_furnaces:furnace")
 minetest.register_alias("default:furnace_active", "mcl_furnaces:furnace_active")
 
-minetest.register_alias("default:lump_of_coal", "mcl_core:coal_lump")
-minetest.register_alias("default:lump_of_iron", "mcl_core:iron_lump")
-minetest.register_alias("default:lump_of_clay", "mcl_core:clay_lump")
 minetest.register_alias("default:steel_ingot", "mcl_core:steel_ingot")
 minetest.register_alias("default:clay_brick", "mcl_core:clay_brick")
 minetest.register_alias("default:snow", "mcl_core:snow")
@@ -231,8 +207,7 @@ minetest.register_alias("default:fence_aspen_wood", "mcl_fences:birch_fence")
 minetest.register_alias("default:fence_acacia_wood", "mcl_fences:acacia_fence")
 minetest.register_alias("default:fence_junglewood", "mcl_fences:jungle_fence")
 
-
-minetest.register_alias("carts:cart", "mcl_minecarts:minecart")
+--carts
 minetest.register_alias("carts:rail", "mcl_minecarts:rail")
 minetest.register_alias("carts:powerrail", "mcl_minecarts:golden_rail")
 minetest.register_alias("carts:brakerail", "mcl_minecarts:rail")
@@ -288,7 +263,7 @@ minetest.register_alias("default:underground_fire", "mcl_fire:eternal_fire")
 minetest.register_alias("nether:permanent_flame", "mcl_fire:eternal_fire")
 minetest.register_alias("default:permanent_flame", "mcl_fire:eternal_fire")
 minetest.register_alias("default:basic_flame", "mcl_fire:fire")
-minetest.register_alias("default:flint_and_steel", "mcl_fire:flint_and_steel")
+
 
 --MC2 Andisite, granite, diorite
 minetest.register_alias("default:marble", "mcl_core:andesite")
@@ -309,8 +284,7 @@ minetest.register_alias("jdukebox:disc_6", "mcl_jukebox:record_6")
 minetest.register_alias("jdukebox:disc_7", "mcl_jukebox:record_7")
 minetest.register_alias("jdukebox:disc_8", "mcl_jukebox:record_8")
 
---GoldenApple
-minetest.register_alias("golden_apple:golden_apple", "mcl_core:golden_apple")
+
 
 --Enderchest
 minetest.register_alias("enderchest:enderchest", "mcl_chests:ender_chest")
@@ -322,21 +296,13 @@ minetest.register_alias("default:end_stone", "mcl_end:end_stone")
 minetest.register_alias("default:end_bricks", "mcl_end:end_bricks")
 minetest.register_alias("default:purpur_block", "mcl_end:purpur_block")
 minetest.register_alias("default:purpur_pillar", "mcl_end:purpur_pillar")
-minetest.register_alias("default:end_rod", "mcl_end:end_rod")
-minetest.register_alias("default:dragon_egg", "mcl_end:dragon_egg")
-minetest.register_alias("mobs_mc:dragon_egg", "mcl_end:dragon_egg")
+
+
 minetest.register_alias("default:dragon_egg", "mcl_end:chorus_flower")
 minetest.register_alias("default:chorus_flower_dead", "mcl_end:chorus_flower_dead")
 minetest.register_alias("default:chorus_plant", "mcl_end:chorus_plant")
 minetest.register_alias("default:chorus_fruit", "mcl_end:chorus_fruit")
 minetest.register_alias("default:chorus_fruit_popped", "mcl_end:chorus_fruit_popped")
-minetest.register_alias("mobs_mc:ender_eye", "mcl_end:ender_eye")
-
-
-
-
---MC2 boats
-minetest.register_alias("boats:boat", "mcl_boats:boat_spruce")
 
 --MC2 chests
 minetest.register_alias("mcl_core:chest", "mcl_chests:chest")
@@ -350,8 +316,7 @@ minetest.register_alias("3d_armor:chestplate_wood", "3d_armor:chestplate_leather
 minetest.register_alias("3d_armor:leggings_wood", "3d_armor:leggings_leather")
 minetest.register_alias("3d_armor:boots_wood", "3d_armor:boots_leather")
 
---screwdriver
-minetest.register_alias("screwdriver:screwdriver", "mcl_core:bowl")
+
 
 --stairs
 minetest.register_alias("stairs:slab_marble", "mcl_stairs:slab_stone")
