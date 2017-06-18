@@ -175,8 +175,7 @@ minetest.register_alias("torches:ceiling", "mcl_torches:torch")
 minetest.register_alias("default:furnace", "mcl_furnaces:furnace")
 minetest.register_alias("default:furnace_active", "mcl_furnaces:furnace_active")
 
-minetest.register_alias("default:steel_ingot", "mcl_core:steel_ingot")
-minetest.register_alias("default:clay_brick", "mcl_core:clay_brick")
+
 minetest.register_alias("default:snow", "mcl_core:snow")
 minetest.register_alias("default:snowblock", "mcl_core:snowblock")
 minetest.register_alias("default:ice", "mcl_core:ice")
@@ -230,7 +229,7 @@ minetest.register_alias("vines:jungle_middle", "mcl_core:vine")
 minetest.register_alias("vines:jungle_end", "mcl_core:vine")
 
 --alias to remove old quartz from maps
-minetest.register_alias("default:quartz_crystal", "mcl_nether:quartz_crystal")
+minetest.register_alias("default:quartz_crystal", "mcl_nether:quartz")
 minetest.register_alias("default:quartz_ore", "mcl_nether:quartz_ore")
 minetest.register_alias("default:block", "mcl_nether:quartz_block")
 minetest.register_alias("default:chiseled", "mcl_nether:quartz_chiseled")
@@ -252,8 +251,8 @@ minetest.register_alias("default:portal", "mcl_nether:portal")
 
 --door
 --minetest.register_alias("doors:door_wood", "mcl_doors:door")
---minetest.register_alias("doors:hidden", "air")
-minetest.register_alias("doors:hidden", "mcl_doors:dark_oak_door_t_1")
+minetest.register_alias("doors:hidden", "air")
+--minetest.register_alias("doors:hidden", "mcl_doors:dark_oak_door_t_1")
 minetest.register_alias("doors:door_wood_a", "mcl_doors:dark_oak_door_b_1")
 minetest.register_alias("doors:door_wood_b", "mcl_doors:dark_oak_door_b_2")
 
@@ -273,16 +272,6 @@ minetest.register_alias("default:granite_bricks", "mcl_core:granite_smooth")
 
 
 
---MC2 jukebox
-minetest.register_alias("jdukebox:box", "mcl_jukebox:jukebox")
-minetest.register_alias("jdukebox:disc_1", "mcl_jukebox:record_1")
-minetest.register_alias("jdukebox:disc_2", "mcl_jukebox:record_2")
-minetest.register_alias("jdukebox:disc_3", "mcl_jukebox:record_3")
-minetest.register_alias("jdukebox:disc_4", "mcl_jukebox:record_4")
-minetest.register_alias("jdukebox:disc_5", "mcl_jukebox:record_5")
-minetest.register_alias("jdukebox:disc_6", "mcl_jukebox:record_6")
-minetest.register_alias("jdukebox:disc_7", "mcl_jukebox:record_7")
-minetest.register_alias("jdukebox:disc_8", "mcl_jukebox:record_8")
 
 
 
@@ -296,9 +285,6 @@ minetest.register_alias("default:end_stone", "mcl_end:end_stone")
 minetest.register_alias("default:end_bricks", "mcl_end:end_bricks")
 minetest.register_alias("default:purpur_block", "mcl_end:purpur_block")
 minetest.register_alias("default:purpur_pillar", "mcl_end:purpur_pillar")
-
-
-minetest.register_alias("default:dragon_egg", "mcl_end:chorus_flower")
 minetest.register_alias("default:chorus_flower_dead", "mcl_end:chorus_flower_dead")
 minetest.register_alias("default:chorus_plant", "mcl_end:chorus_plant")
 minetest.register_alias("default:chorus_fruit", "mcl_end:chorus_fruit")
@@ -310,11 +296,7 @@ minetest.register_alias("mcl_core:chest", "mcl_chests:chest")
 --nssm
 minetest.register_alias("nssm:ant_dirt", "mcl_core:coarse_dirt")
 
---armor
-minetest.register_alias("3d_armor:helmet_wood", "3d_armor:helmet_leather")
-minetest.register_alias("3d_armor:chestplate_wood", "3d_armor:chestplate_leather")
-minetest.register_alias("3d_armor:leggings_wood", "3d_armor:leggings_leather")
-minetest.register_alias("3d_armor:boots_wood", "3d_armor:boots_leather")
+
 
 
 
@@ -383,6 +365,34 @@ minetest.register_alias("hardenedclay:hardened_clay_gray", "mcl_colorblocks:hard
 minetest.register_alias("hardenedclay:hardened_clay_light_gray", "mcl_colorblocks:hardened_clay_grey")
 minetest.register_alias("hardenedclay:hardened_clay_dark_gray", "mcl_colorblocks:hardened_clay_dark_grey")
 minetest.register_alias("hardenedclay:hardened_clay_black", "mcl_colorblocks:hardened_clay_black")
+
+--carpet3d
+minetest.register_alias("carpet3d:white", "mcl_wool:white_carpet")
+minetest.register_alias("carpet3d:grey", "mcl_wool:grey_carpet")
+minetest.register_alias("carpet3d:silver", "mcl_wool:silver_carpet")
+minetest.register_alias("carpet3d:black", "mcl_wool:black_carpet")
+minetest.register_alias("carpet3d:red", "mcl_wool:red_carpet")
+minetest.register_alias("carpet3d:yellow", "mcl_wool:yellow_carpet")
+minetest.register_alias("carpet3d:green", "mcl_wool:green_carpet")
+minetest.register_alias("carpet3d:cyan", "mcl_wool:cyan_carpet")
+minetest.register_alias("carpet3d:blue", "mcl_wool:blue_carpet")
+minetest.register_alias("carpet3d:magenta", "mcl_wool:magenta_carpet")
+minetest.register_alias("carpet3d:orange", "mcl_wool:orange_carpet")
+minetest.register_alias("carpet3d:purple", "mcl_wool:purple_carpet")
+minetest.register_alias("carpet3d:brown", "mcl_wool:brown_carpet")
+minetest.register_alias("carpet3d:pink", "mcl_wool:pink_carpet")
+minetest.register_alias("carpet3d:lime", "mcl_wool:lime_carpet")
+minetest.register_alias("carpet3d:light_blue", "mcl_wool:light_blue_carpet")
+minetest.register_alias("carpet3d:dark_grey", "mcl_wool:dark_grey_carpet")
+minetest.register_alias("carpet3d:dark_green", "mcl_wool:dark_green_carpet")
+
+
+--itemframes etc
+minetest.register_alias("xdecor:itemframe", "itemframes:frame")
+minetest.register_alias("xdecor:f_item", "itemframes:item")
+minetest.register_alias("xdecor:workbench", "mcl_anvils:anvil")
+minetest.register_alias("xdecor:enchantment_table", "mcl_crafting_table:crafting_table")
+minetest.register_alias("xdecor:hammer", "mcl_anvils:anvil")
 
 
 --glass
@@ -593,3 +603,5 @@ minetest.register_alias("farming:cotton_5", "mcl_farming:wheat_5")
 minetest.register_alias("farming:cotton_6", "mcl_farming:wheat_5")
 minetest.register_alias("farming:cotton_7", "mcl_farming:wheat_5")
 minetest.register_alias("farming:cotton_8", "mcl_farming:wheat_5")
+
+
