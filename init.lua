@@ -248,8 +248,7 @@ minetest.register_alias("default:glowstone_dust", "mcl_nether:glowstone_dust")
 minetest.register_alias("default:rack_with_diamond", "mcl_core:stone_with_diamond")
 minetest.register_alias("default:slowsand", "mcl_nether:soul_sand")
 minetest.register_alias("default:fence_nither", "mcl_nether:fence_nether")
-minetest.register_alias("default:particle", "mcl_nether:particle")
-minetest.register_alias("default:portal", "mcl_nether:portal")
+
 
 --door
 --minetest.register_alias("doors:door_wood", "mcl_doors:door")
@@ -340,6 +339,9 @@ minetest.register_alias("stairs:slab_obsidian", "mcl_stairs:slab_stone")
 
 minetest.register_alias("stairs:stair_sandstonebrick", "mcl_stairs:stair_sandstone")
 minetest.register_alias("stairs:slab_sandstonebrick", "mcl_stairs:slab_sandstone")
+
+minetest.register_alias("stairs:stair_netherbrick", "mcl_stairs:stair_nether_brick")
+minetest.register_alias("stairs:slab_netherbrick", "mcl_stairs:slab_nether_brick")
 
 minetest.register_alias("stairs:stair_brick", "mcl_stairs:slab_brick_block")
 minetest.register_alias("stairs:slab_brick", "mcl_stairs:slab_brick_block")
