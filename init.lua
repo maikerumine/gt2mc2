@@ -1,6 +1,7 @@
 -- mods/gt2mc/init.lua
 
 dofile(minetest.get_modpath("gt2mc2").."/craftitems.lua")
+dofile(minetest.get_modpath("gt2mc2").."/enchanted.lua")
 --default to mcl_core
 minetest.register_alias("default:stone", "mcl_core:stone")
 minetest.register_alias("default:savannastone", "mcl_core:stone")
@@ -146,7 +147,8 @@ minetest.register_alias("default:goldblock", "mcl_core:goldblock")
 minetest.register_alias("default:diamondblock", "mcl_core:diamondblock")
 minetest.register_alias("default:emeraldblock", "mcl_core:emeraldblock")
 minetest.register_alias("default:meselamp", "mcl_nether:glowstone")
-minetest.register_alias("default:coalblock", "mcl_core:coalblock")
+minetest.register_alias("default:meselamp", "mcl_nether:glowstone")
+minetest.register_alias("default:mese", "mesecons_torch:redstoneblock")
 
 minetest.register_alias("default:coral_brown", "mcl_core:coalblock")
 minetest.register_alias("default:coral_orange", "mcl_core:coalblock")
@@ -255,6 +257,8 @@ minetest.register_alias("doors:hidden", "air")
 --minetest.register_alias("doors:hidden", "mcl_doors:dark_oak_door_t_1")
 minetest.register_alias("doors:door_wood_a", "mcl_doors:dark_oak_door_b_1")
 minetest.register_alias("doors:door_wood_b", "mcl_doors:dark_oak_door_b_2")
+minetest.register_alias("doors:door_wood_t_1", "mcl_doors:dark_oak_door_b_1")
+minetest.register_alias("doors:door_wood_t_2", "mcl_doors:dark_oak_door_b_2")
 
 
 --Fire
@@ -321,11 +325,18 @@ minetest.register_alias("stairs:stair_mossycobble", "mcl_stairs:stair_cobble")
 minetest.register_alias("stairs:slab_mossycobble", "mcl_stairs:slab_cobble")
 minetest.register_alias("stairs:stair_desert_cobble", "mcl_stairs:stair_sandstone")
 minetest.register_alias("stairs:slab_desert_cobble", "mcl_stairs:slab_sandstone")
+minetest.register_alias("stairs:stair_desert_stone", "mcl_stairs:stair_redsandstone")
+minetest.register_alias("stairs:slab_desert_stone", "mcl_stairs:slab_redsandstone")
 minetest.register_alias("stairs:stair_desert_stonebrick", "mcl_stairs:stair_redsandstone")
 minetest.register_alias("stairs:slab_desert_stonebrick", "mcl_stairs:slab_redsandstone")
 
-minetest.register_alias("stairs:stair_stone", "mcl_stairs:slab_stone")
+minetest.register_alias("stairs:stair_stone", "mcl_stairs:stair_cobble")
 minetest.register_alias("stairs:slab_stone", "mcl_stairs:slab_stone")
+
+minetest.register_alias("stairs:stair_obsidianbrick", "mcl_stairs:stair_cobble")
+minetest.register_alias("stairs:slab_obsidianbrick", "mcl_stairs:slab_stone")
+minetest.register_alias("stairs:stair_obsidian", "mcl_stairs:stair_cobble")
+minetest.register_alias("stairs:slab_obsidian", "mcl_stairs:slab_stone")
 
 minetest.register_alias("stairs:stair_sandstonebrick", "mcl_stairs:stair_sandstone")
 minetest.register_alias("stairs:slab_sandstonebrick", "mcl_stairs:slab_sandstone")
@@ -341,7 +352,10 @@ minetest.register_alias("stairs:slab_goldblock", "mcl_stairs:slab_cobble")
 
 minetest.register_alias("stairs:stair_pine_wood", "mcl_stairs:stair_sprucewood")
 minetest.register_alias("stairs:slab_pine_wood", "mcl_stairs:slab_sprucewood")
-
+minetest.register_alias("stairs:stair_acacia_wood", "mcl_stairs:stair_acaciawood")
+minetest.register_alias("stairs:slab_acacia_wood", "mcl_stairs:slab_acaciawood")
+minetest.register_alias("stairs:stair_aspen_wood", "mcl_stairs:stair_birchwood")
+minetest.register_alias("stairs:slab_aspen_wood", "mcl_stairs:slab_birchwood")
 
 --MC2 beds
 minetest.register_alias("beds:fancy_bed", "beds:bed")
@@ -391,7 +405,7 @@ minetest.register_alias("carpet3d:dark_green", "mcl_wool:dark_green_carpet")
 minetest.register_alias("xdecor:itemframe", "itemframes:frame")
 minetest.register_alias("xdecor:f_item", "itemframes:item")
 minetest.register_alias("xdecor:workbench", "mcl_anvils:anvil")
-minetest.register_alias("xdecor:enchantment_table", "mcl_crafting_table:crafting_table")
+--minetest.register_alias("xdecor:enchantment_table", "mcl_crafting_table:crafting_table")
 minetest.register_alias("xdecor:hammer", "mcl_anvils:anvil")
 
 
@@ -421,7 +435,8 @@ minetest.register_alias("wool:cyan", "mcl_wool:cyan")
 minetest.register_alias("wool:blue", "mcl_wool:blue")
 minetest.register_alias("wool:magenta", "mcl_wool:magenta")
 minetest.register_alias("wool:orange", "mcl_wool:orange")
-minetest.register_alias("wool:violet", "mcl_wool:violet")
+minetest.register_alias("wool:violet", "mcl_wool:purple")
+minetest.register_alias("mcl_wool:violet", "mcl_wool:purple")
 minetest.register_alias("wool:brown", "mcl_wool:brown")
 minetest.register_alias("wool:pink", "mcl_wool:pink")
 minetest.register_alias("wool:dark_grey", "mcl_wool:dark_grey")
@@ -544,6 +559,8 @@ minetest.register_alias("farming:cocoa_3", "mcl_cocoas:cocoa_3")
 
 
 minetest.register_alias("farming:melon", "mcl_farming:melon")
+minetest.register_alias("farming:melon_slice", "mcl_farming:melon_slice")
+minetest.register_alias("mcl_farming:melon_slice", "mcl_farming:melon")
 minetest.register_alias("farming:melon_1", "mcl_farming:melontige_7")
 minetest.register_alias("farming:melon_2", "mcl_farming:melontige_7")
 minetest.register_alias("farming:melon_3", "mcl_farming:melontige_7")
@@ -585,6 +602,10 @@ minetest.register_alias("farming:corn_7", "mcl_farming:carrot")
 minetest.register_alias("farming:corn_8", "mcl_farming:carrot")
 
 minetest.register_alias("farming:wheat", "mcl_farming:wheat")
+minetest.register_alias("farming:bread", "mcl_farming:bread")
+minetest.register_alias("farming:flour", "mcl_farming:bread")
+minetest.register_alias("farming:seed_wheat", "mcl_farming:wheat_seeds")
+minetest.register_alias("mcl_farming:seed_wheat", "mcl_farming:wheat_seeds")
 minetest.register_alias("farming:wheat_1", "mcl_farming:wheat_5")
 minetest.register_alias("farming:wheat_2", "mcl_farming:wheat_5")
 minetest.register_alias("farming:wheat_3", "mcl_farming:wheat_5")
@@ -595,6 +616,7 @@ minetest.register_alias("farming:wheat_7", "mcl_farming:wheat_5")
 minetest.register_alias("farming:wheat_8", "mcl_farming:wheat_5")
 
 minetest.register_alias("farming:cotton", "mcl_farming:wheat")
+minetest.register_alias("farming:seed_cotton", "mcl_farming:wheat")
 minetest.register_alias("farming:cotton_1", "mcl_farming:wheat_5")
 minetest.register_alias("farming:cotton_2", "mcl_farming:wheat_5")
 minetest.register_alias("farming:cotton_3", "mcl_farming:wheat_5")
