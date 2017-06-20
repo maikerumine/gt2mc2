@@ -25,6 +25,7 @@ minetest.register_alias("default:stone_with_emerald", "mcl_core:stone_with_emera
 minetest.register_alias("default:sand_with_diamond", "mcl_core:stone_with_diamond")
 minetest.register_alias("default:rack_with_diamond", "mcl_core:stone_with_diamond")
 minetest.register_alias("default:stone_with_mese", "mcl_core:stone_with_redstone")
+minetest.register_alias("mcl_core:stone_with_mese", "mcl_core:stone_with_redstone")
 
 
 minetest.register_alias("default:dirt_with_grass", "mcl_core:dirt_with_grass")
@@ -73,7 +74,7 @@ minetest.register_alias("default:bush_acacia_sapling", "mcl_core:acaciasapling")
 minetest.register_alias("default:tree", "mcl_core:tree")
 minetest.register_alias("default:jungletree", "mcl_core:jungletree")
 minetest.register_alias("default:aspen_tree", "mcl_core:birchtree")
-minetest.register_alias("default:acacia_tree", "mcl_core:acaciatree")
+--minetest.register_alias("default:acacia_tree", "mcl_core:acaciatree")
 minetest.register_alias("default:pine_tree", "mcl_core:sprucetree")
 
 minetest.register_alias("default:wood", "mcl_core:wood")
@@ -85,7 +86,7 @@ minetest.register_alias("default:pine_wood", "mcl_core:sprucewood")
 minetest.register_alias("default:leaves", "mcl_core:leaves")
 minetest.register_alias("default:jungleleaves", "mcl_core:jungleleaves")
 minetest.register_alias("default:aspen_leaves", "mcl_core:birchleaves")
-minetest.register_alias("default:acacia_leaves", "mcl_core:acacialeaves")
+--minetest.register_alias("default:acacia_leaves", "mcl_core:acacialeaves")
 minetest.register_alias("default:pine_needles", "mcl_core:spruceleaves")
 
 minetest.register_alias("default:sapling", "mcl_core:sapling")
@@ -231,7 +232,7 @@ minetest.register_alias("vines:jungle_middle", "mcl_core:vine")
 minetest.register_alias("vines:jungle_end", "mcl_core:vine")
 
 --alias to remove old quartz from maps
-minetest.register_alias("default:quartz_crystal", "mcl_nether:quartz")
+--minetest.register_alias("default:quartz_crystal", "mcl_nether:quartz")
 minetest.register_alias("default:quartz_ore", "mcl_nether:quartz_ore")
 minetest.register_alias("default:block", "mcl_nether:quartz_block")
 minetest.register_alias("default:chiseled", "mcl_nether:quartz_chiseled")
@@ -242,6 +243,7 @@ minetest.register_alias("default:pillar_horizontal", "mcl_nether:quartz_pillar_h
 minetest.register_alias("default:rack", "mcl_nether:netherrack")
 minetest.register_alias("default:quartz_ore", "mcl_nether:quartz_ore")
 minetest.register_alias("default:quartz_crystal", "mcl_nether:quartz_crystal")
+--minetest.register_alias("default:nitherbrick", "mcl_nether:nether_brick")
 minetest.register_alias("default:nitherbrick", "mcl_nether:nether_brick")
 minetest.register_alias("default:glowstone", "mcl_nether:glowstone")
 minetest.register_alias("default:glowstone_dust", "mcl_nether:glowstone_dust")
@@ -318,8 +320,8 @@ minetest.register_alias("stairs:slab_diorite", "mcl_stairs:slab_stone")
 minetest.register_alias("stairs:stair_granite", "mcl_stairs:stair_stone")
 minetest.register_alias("stairs:slab_granite", "mcl_stairs:slab_stone")
 
-minetest.register_alias("stairs:stair_cobble", "mcl_stairs:stair_cobble")
-minetest.register_alias("stairs:slab_cobble", "mcl_stairs:slab_cobble")
+--minetest.register_alias("stairs:stair_cobble", "mcl_stairs:stair_cobble")
+--minetest.register_alias("stairs:slab_cobble", "mcl_stairs:slab_cobble")
 minetest.register_alias("stairs:stair_mossycobble", "mcl_stairs:stair_cobble")
 minetest.register_alias("stairs:slab_mossycobble", "mcl_stairs:slab_cobble")
 minetest.register_alias("stairs:stair_desert_cobble", "mcl_stairs:stair_sandstone")
@@ -329,8 +331,8 @@ minetest.register_alias("stairs:slab_desert_stone", "mcl_stairs:slab_redsandston
 minetest.register_alias("stairs:stair_desert_stonebrick", "mcl_stairs:stair_redsandstone")
 minetest.register_alias("stairs:slab_desert_stonebrick", "mcl_stairs:slab_redsandstone")
 
-minetest.register_alias("stairs:stair_stone", "mcl_stairs:stair_cobble")
-minetest.register_alias("stairs:slab_stone", "mcl_stairs:slab_stone")
+--minetest.register_alias("stairs:stair_stone", "mcl_stairs:stair_cobble")
+--minetest.register_alias("stairs:slab_stone", "mcl_stairs:slab_stone")
 
 minetest.register_alias("stairs:stair_obsidianbrick", "mcl_stairs:stair_cobble")
 minetest.register_alias("stairs:slab_obsidianbrick", "mcl_stairs:slab_stone")
@@ -340,6 +342,8 @@ minetest.register_alias("stairs:slab_obsidian", "mcl_stairs:slab_stone")
 minetest.register_alias("stairs:stair_sandstonebrick", "mcl_stairs:stair_sandstone")
 minetest.register_alias("stairs:slab_sandstonebrick", "mcl_stairs:slab_sandstone")
 
+minetest.register_alias("stairs:stair_nitherbrick", "mcl_stairs:stair_nether_brick")
+minetest.register_alias("stairs:slab_nitherbrick", "mcl_stairs:slab_nether_brick")
 minetest.register_alias("stairs:stair_netherbrick", "mcl_stairs:stair_nether_brick")
 minetest.register_alias("stairs:slab_netherbrick", "mcl_stairs:slab_nether_brick")
 
