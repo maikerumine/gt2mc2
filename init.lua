@@ -2,6 +2,7 @@
 
 dofile(minetest.get_modpath("gt2mc2").."/craftitems.lua")
 dofile(minetest.get_modpath("gt2mc2").."/enchanted.lua")
+dofile(minetest.get_modpath("gt2mc2").."/mob_items.lua")
 
 --======================
 --MC2 beds
@@ -128,7 +129,9 @@ minetest.register_alias("default:bush_leaves", "mcl_core:leaves")
 minetest.register_alias("default:bush_stem", "mcl_core:tree")
 minetest.register_alias("default:bush_sapling", "mcl_core:sapling")
 minetest.register_alias("default:bush_acacia_leaves", "mcl_core:acacialeaves")
+minetest.register_alias("default:acacia_bush_leaves", "mcl_core:acacialeaves")
 minetest.register_alias("default:bush_acacia_stem", "mcl_core:acaciatree")
+minetest.register_alias("default:acacia_bush_stem", "mcl_core:acaciatree")
 minetest.register_alias("default:bush_acacia_sapling", "mcl_core:acaciasapling")
 
 minetest.register_alias("default:tree", "mcl_core:tree")
@@ -179,6 +182,7 @@ minetest.register_alias("default:glass", "mcl_core:glass")
 minetest.register_alias("default:obsidian_glass", "mcl_core:glass")
 
 minetest.register_alias("default:ladder_wood", "mcl_core:ladder")
+minetest.register_alias("default:ladder", "mcl_core:ladder")
 minetest.register_alias("default:wood", "mcl_core:wood")
 minetest.register_alias("default:mese", "mcl_core:redstone_block")
 minetest.register_alias("default:cloud", "mcl_core:cloud")
@@ -220,7 +224,7 @@ minetest.register_alias("default:coral_skeleton", "mcl_core:coalblock")
 
 minetest.register_alias("default:nyancat", "mcl_core:nyancat")
 minetest.register_alias("default:nyancat_rainbow", "mcl_core:nyancat_rainbow")
-minetest.register_alias("default:apple", "mcl_farming:melon")  --did this to fix map
+minetest.register_alias("default:apple", "mcl_flowers:tallgrass")  --did this to fix map
 
 
 
@@ -247,7 +251,6 @@ minetest.register_alias("default:ice", "mcl_core:ice")
 minetest.register_alias("default:pinetree", "mcl_core:sprucetree")
 minetest.register_alias("default:pinewood", "mcl_core:sprucewood")
 
-minetest.register_alias("default:ladder", "mcl_core:ladder_wood")
 minetest.register_alias("default:sign_wall", "mcl_core:sign_wall_wood")
 minetest.register_alias("default:fence_wood", "mcl_fences:fence")
 minetest.register_alias("default:fence_oak_wood", "mcl_fences:dark_oak_fence")
@@ -281,17 +284,11 @@ minetest.register_alias("doors:door_steel_a", "mcl_doors:iron_door_t_1")
 minetest.register_alias("doors:door_steel_t_1", "mcl_doors:iron_door_t_1")
 minetest.register_alias("doors:door_steel_t_2", "mcl_doors:iron_door_t_2")
 
---======================
---enderchest
---======================
-minetest.register_alias("default:enderchest", "mcl_chests:ender_chest")
 
 --======================
 --farming oh boy...
 --======================
 --tomato
-minetest.register_alias("farming:bottle_ethanol", "farming:carrot")
-
 minetest.register_alias("farming:tomato", "farming:carrot")
 minetest.register_alias("farming:tomato_1", "mcl_flowers:tallgrass")
 minetest.register_alias("farming:tomato_2", "mcl_flowers:tallgrass")
@@ -552,7 +549,6 @@ minetest.register_alias("default:chest_locked", "mcl_chests:chest")
 --nssm
 --======================
 minetest.register_alias("nssm:ant_dirt", "mcl_core:coarse_dirt")
-minetest.register_alias("nssm:stoneater_pick", "xdecor:enchantment_table")
 
 --======================
 --Nyancat
@@ -573,7 +569,7 @@ minetest.register_alias("default:pillar", "mcl_nether:quartz_pillar")
 minetest.register_alias("default:pillar_horizontal", "mcl_nether:quartz_pillar_horizontal")
 
 --======================
---alias to merge nether to mcl_core
+--alias to merge default-nether to mcl_core
 --======================
 minetest.register_alias("default:rack", "mcl_nether:netherrack")
 minetest.register_alias("default:quartz_ore", "mcl_nether:quartz_ore")
@@ -585,6 +581,22 @@ minetest.register_alias("default:glowstone_dust", "mcl_nether:glowstone_dust")
 minetest.register_alias("default:rack_with_diamond", "mcl_core:stone_with_diamond")
 minetest.register_alias("default:slowsand", "mcl_nether:soul_sand")
 minetest.register_alias("default:fence_nither", "mcl_fences:nether_brick_fence")
+
+--======================
+--alias to merge nether to mcl_core
+--======================
+minetest.register_alias("nether:rack", "mcl_nether:netherrack")
+minetest.register_alias("nether:quartz_ore", "mcl_nether:quartz_ore")
+minetest.register_alias("nether:quartz_crystal", "mcl_nether:quartz_crystal")
+minetest.register_alias("nether:nitherbrick", "mcl_nether:nether_brick")
+minetest.register_alias("nether:obsidiannitherbrick", "mcl_nether:nether_brick")
+minetest.register_alias("nether:glowstone", "mcl_nether:glowstone")
+minetest.register_alias("nether:glowstone_dust", "mcl_nether:glowstone_dust")
+minetest.register_alias("nether:rack_with_diamond", "mcl_core:stone_with_diamond")
+minetest.register_alias("nether:sand", "mcl_nether:soul_sand")
+minetest.register_alias("nether:portal", "mcl_portals:portal")
+minetest.register_alias("nether:fence_nither", "mcl_fences:nether_brick_fence")
+
 
 --======================
 --stairs
@@ -709,6 +721,7 @@ minetest.register_alias("mg_villages:plotmarker", "mcl_stairs:slab_stone")
 minetest.register_alias("mg_villages:road", "mcl_stairs:slab_stone")
 minetest.register_alias("mg_villages:road", "mcl_stairs:slab_stone")
 minetest.register_alias("mg_villages:soil", "mcl_farming:soil")
+minetest.register_alias("handle_schematics:support", "mcl_farming:soil")
 
 --======================
 --xdecor itemframes etc
